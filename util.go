@@ -8,6 +8,7 @@ import (
 	"strconv"
 	"strings"
 	"unicode/utf8"
+	"time"
 )
 
 //FIX: init rand func seed
