@@ -10,6 +10,11 @@ import (
 	"unicode/utf8"
 )
 
+//FIX: init rand func seed
+func init() {
+	rand.Seed(time.Now().UTC().UnixNano())
+}
+
 // AuthACL produces an ACL list containing a single ACL which uses the
 // provided permissions, with the scheme "auth", and ID "", which is used
 // by ZooKeeper to represent any authenticated user.
